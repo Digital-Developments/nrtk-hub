@@ -1,0 +1,4 @@
+.vscode/
+.envs/
+Caddyfile
+compose.yml

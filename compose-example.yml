@@ -1,0 +1,38 @@
+services:
+
+  caddy:
+    image: caddy:2.9.1-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+
+  nrtk-host:
+    image: michaelageev/nrtk-client-go:0.1-alpine
+    restart: unless-stopped
+    expose:
+      - 8080
+    volumes:
+      - nrtk_data:/app/host/
+    depends_on:
+      - caddy
+    env_file:
+      - .envs/host
+
+  #nrtk-second:  Second host that extends nrtk-host config while stores own configuration in .envs/second file
+  #  extends:
+  #    service: nrtk-host
+  #  volumes:
+  #    - nrtk_data:/app/second/
+  #  env_file:
+  #    - .envs/second
+
+volumes:
+  nrtk_data:
+  caddy_data:
+  caddy_config:
