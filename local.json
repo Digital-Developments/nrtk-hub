@@ -1,0 +1,24 @@
+{
+    "title": "localhost",
+    "entity": "frontend",
+    "locale": "en",
+    "site_name": "localhost",
+    "logo_url": "https://media.newsroomtoolkit.com/assets/images/logo.png",
+    "homepage_url": "",
+    "stories": [
+        {
+            "uid": "d71fb073-8970-4b5b-b916-b04b5e6e5c15",
+            "anchor": "index",
+            "canonical_url": "",
+            "title": "localhost",
+            "credits": "Mikhail Ageev",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\"> <head> <meta charset=\"utf-8\"> <title>localhost</title> <meta name=\"description\" content=\"Welcome to localhost\" /> <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\"> <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"></head><body><link type=\"text/css\" href=\"https://assets.newsroomtoolkit.com/theme/frontend%40v2.1.3.css\" rel=\"stylesheet\" /> <script nonce=\"8350e5a3e\"> var STORY_CONFIG = { is_gallery_enabled: true, is_show_sharing: true, };\n</script> <div id=\"nrtk-container\" style=\"width: 320px;  min-height: 300px;  padding: 5px;  display: flex;  justify-content: center;  align-items: center;  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);\"> <div><h1 style=\"text-align: center; font-size: 2rem;\">👋 Hi there!</h1> <p>Sincerely yours, localhost</p></div></div> <script type=\"text/javascript\" src=\"https://assets.newsroomtoolkit.com/theme/frontend%40v2.1.3.js\" integrity=\"sha384-Qj3cWGulBbRELnZTlo9RweBNpH+KV/20nreZP6yE6C5OEOQ4hi1iMKKKEtMlDSUj\" crossorigin=\"anonymous\"></script> </body> </html>",
+            "story_date": "2025-14-18",
+            "is_landing": true,
+            "updated_at": "2025-14-18T09:34:27.128073",
+            "url": "",
+            "hash": "65e04c1bfbf37249767c1c6dc92f5a5169e9cb73ead6198a251ec6ceb4cf2ec0"
+        }
+    ],
+    "error_page": " <!DOCTYPE html>\n<html lang=\"en\"> <head> <meta charset=\"utf-8\"> <title>Page not found</title> <meta name=\"robots\" content=\"noindex\"> <meta name=\"description\" content=\"The content you are looking for cannot be found\" /> <meta name=\"viewport\" content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\"> <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"> </head> <body> <link type=\"text/css\" href=\"https://assets.newsroomtoolkit.com/theme/frontend%40v2.1.3.css\" rel=\"stylesheet\" /> <div id=\"nrtk-container\"> <div id=\"nrtk-story-meta\" class=\"\"> <div class=\"introduction\"> <div class=\"branding\"> <a href=\"/\"><img src=\"https://media.newsroomtoolkit.com/assets/images/logo.png\" alt=\"localhost\"></a> </div> <div class=\"headline\" style=\"margin-top: 60px;\"> <span class=\"mark-special\">Error 404</span> <h1>Page Not Found</h1> </div> </div> </div> <div id=\"nrtk-content\" style=\"margin-top: 60px; text-align: center;\"> <p>It seems the page you're looking for doesn't exist or may have been moved.</p> <p>Let's get you back on track – head to the <a href=\"/\">Homepage</a>.</p> </div> </div> </body> </html>"
+}

@@ -4,6 +4,7 @@
 ENV_DIR=".envs"
 # Output JSON file
 OUTPUT_FILE="Caddyfile"
+COMPOSE_TYPE="-development"
 
 # Check if the directory exists
 if [ ! -d "$ENV_DIR" ]; then
@@ -69,8 +70,11 @@ done
 
 echo "JSON file generated at $OUTPUT_FILE"
 
-echo "Starting Docker Compose"
+if [[ "$1" != "" ]]; then
+        COMPOSE_TYPE=""
+        echo "Starting Docker Compose in production mode"
+    fi
 
-docker compose down
-docker image prune -a -f
-docker compose up -d
+docker compose -f compose"$COMPOSE_TYPE".yml down --remove-orphans
+#docker image prune -a -f
+docker compose -f compose"$COMPOSE_TYPE".yml up -d --build --remove-orphans --force-recreate --no-deps --timeout 60
